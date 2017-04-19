@@ -13,8 +13,8 @@ class App extends Component {
 
     this.state = {
       topics: [
-        { id: 1, label: 'Palindrome', component: 'Palindrome.js' },
-        { id: 2, label: 'Reverse Array', component: 'ReverseArray.js' }
+        { id: 1, label: 'Palindrome', component: 'Palindrome' },
+        { id: 2, label: 'Reverse Array', component: 'ReverseArray' }
       ],
 
       selectedTopic: null
