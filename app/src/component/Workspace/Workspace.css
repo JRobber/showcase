@@ -1,0 +1,10 @@
+#workspace-component {
+  display: inline-block;
+  width: calc(100% - 200px);
+  height: 100vh;
+  min-height: 700px;
+}
+
+#workspace-header {
+  text-align: center;
+}
