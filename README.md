@@ -98,9 +98,10 @@ export default App;
 ### Summary
 
 In this step we will create the component for the header of our showcase.
+
 ### Instructions
 
-Create a component in the `component` folder called `Header` that renders a single div that takes up 100% of the width of the screen and have a header element labled "Showcase". Let's also align our header element in the center of the div. When adding our CSS let's use an `id` of `#header-component`. After you're done creating the Header component import it into `App.js` and render it.
+Create a component in the component folder called `Header` that renders a single `div` that takes up 100% of the width of the screen and inside that `div` have a header element labled "Showcase". Let's also align our header element in the center of the `div`. When adding our CSS let's use an `id` of `#header-component`. After you're done creating the `Header` component import it into `App.js` and `render` it.
 
 <details>
 
