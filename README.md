@@ -39,4 +39,4 @@ You should now have a file structure like this:
 
 And a browser pop up that looks like this:
 
-<img src="" />
+<img src="https://github.com/devlemire/toy-problem-appendix/blob/solution/readme/1.png" />
