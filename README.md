@@ -2,7 +2,7 @@
 
 # Project Summary
 
-In this project we will create a react application from scratch using `create-react-app`. This project will start as an appendix of solutions to toy problems. We will have a navigation bar on the left of toy problem topics that will then change the workspace view on the right. At the end of this project you should have a comfortable understanding on how to quickly boot up a React project using `create-react-app` and an understanding of the following topics:
+In this project we will create a react application from scratch using `create-react-app`. This project will start as a showcase of solutions to toy problems. We will have a header at the top and a navigation bar on the left of toy problem topics that will then change the workspace view on the right. At the end of this project you should have a comfortable understanding on how to quickly boot up a React project using `create-react-app` and an understanding of the following topics:
 
 * Components
 * State
@@ -25,7 +25,9 @@ When in the root of the project use `creare-react-app app`. After `create-react-
 
 ### Solution
 
-You should now have a file structure like this:
+<details>
+
+<summary> File Structure </summary>
 
 ```
 - app/
@@ -39,7 +41,7 @@ You should now have a file structure like this:
 - README.md 
 ```
 
-And a browser pop up that looks like this:
+</details>
 
 <img src="https://github.com/devlemire/toy-problem-appendix/blob/solution/readme/1.png" />
 
@@ -57,7 +59,9 @@ If you had your development server still going you'll probably notice our App is
 
 ### Solution
 
-File structure:
+<details>
+
+<summary> File structure </summary>
 
 ```
 - src/
@@ -67,6 +71,8 @@ File structure:
   - index.css
   - index.js
 ```
+
+</details>
 
 <details>
 
@@ -86,3 +92,69 @@ export default App;
 ```
 
 </details>
+
+## Step 3
+
+### Summary
+
+In this step we will create the component for the header of our showcase.
+### Instructions
+
+Create a component in the `component` folder called `Header` that renders a single div that takes up 100% of the width of the screen and have a header element labled "Showcase". Let's also align our header in the center of the div. When adding our CSS let's use an `id` of `#header-component`.
+
+<details>
+
+<summary> Detailed Instructions </summary>
+
+<br />
+
+Let's start by going into `src/component/` and creating a folder called `Header`. This folder will hold all the files related to our `Header` component we are about to create. Inside of `src/component/Header` create a `Header.js` and `Header.css` file. 
+
+Open up `Header.js` and import `React, { Component }` from `react`. Will need these in order to use JSX and create our new component. On the next line import `./Header.css` so our header component will receive the styles we will add in that file. Now that we have all our imports we can start creating our component. Let's create a class called Header that extends on `Component`. Your Header.js should now look like:
+
+```jsx
+import React, { Component } from 'react';
+import './Header.css';
+
+class Header extends Component {
+
+}
+```
+
+Remember that in React in order for a component to render on the DOM the component needs a `render` method. Inside the render method add a return statment that will return our `<div>` that has a `<h1>` element labled "Showcase". Don't forget to add the id of `#header-component` to the `<div>`.
+
+```jsx
+import React, { Component } from 'react';
+import './Header.css';
+
+class Header extends Component {
+  return (
+    <div id="header-component">
+      <h1> Showcase </h1>
+    </div>
+  )
+}
+```
+
+Lastly all our Header.js file needs to do is export our new Header class so `App.js` can render it onto the view. We do this using `export default`. After our class add a `export default` for `Header`.
+
+```jsx
+import React, { Component } from 'react';
+import './Header.css';
+
+class Header extends Component {
+  render() {
+    return (
+      <div id="header-component">
+        <h1> Showcase </h1>
+      </div>
+    )
+  }
+}
+
+export default Header;
+```
+
+</details>
+
+### Solution
