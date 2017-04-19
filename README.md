@@ -19,7 +19,7 @@ After completing this project you'll have the knowledge to add more toy problems
 
 In this step we will quickly create a boilerplate for our React project by using `create-react-app`. After `create-react-app` has finished we will start our development server that `create-react-app` provides.
 
-### Detailed Instructions
+### Instructions
 
 When in the root of the project use `creare-react-app app`. After `create-react-app` has finished `cd` into `app` and run `npm start`.
 
@@ -51,7 +51,7 @@ When in the root of the project use `creare-react-app app`. After `create-react-
 
 Now that our boilerplate is ready to go, let's change some of the file structure slightly to meet our needs for this project.
 
-### Detailed Instructions
+### Instructions
 
 First, let's remove `src/logo.svg` since we won't be using that for our project. Next, let's add a component folder in `src` to store the components we will be making.
 
@@ -100,7 +100,7 @@ export default App;
 In this step we will create the component for the header of our showcase.
 ### Instructions
 
-Create a component in the `component` folder called `Header` that renders a single div that takes up 100% of the width of the screen and have a header element labled "Showcase". Let's also align our header in the center of the div. When adding our CSS let's use an `id` of `#header-component`.
+Create a component in the `component` folder called `Header` that renders a single div that takes up 100% of the width of the screen and have a header element labled "Showcase". Let's also align our header element in the center of the div. When adding our CSS let's use an `id` of `#header-component`. After you're done creating the Header component import it into `App.js` and render it.
 
 <details>
 
@@ -155,6 +155,102 @@ class Header extends Component {
 export default Header;
 ```
 
+Now that our Header component is created, let's add some styles for `#header-component` in `Header.css`. Since we want to alter the width and align the text will be using the following properties: `width` and `text-align`. To get an element to take up the entire width of the view you can use `100%` with `width` and to have text align in the center you can use `center` with `text-align`. 
+
+```css
+#header-component {
+  width: 100%;
+  text-align: center;
+}
+```
+
+We're now ready to import our `Header` component into `App.js` and then render it. Using `import`, import `Header` from `./component/Header/Header` and then in our return statement add `<Header />`.
+
+```js
+import React, { Component } from 'react';
+import './App.css';
+
+// Components
+import Header from './component/Header/Header';
+
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Header />
+      </div>
+    )
+  }
+}
+
+export default App;
+```
+
 </details>
 
 ### Solution
+
+<details>
+
+<summary> <code> Header.js </code> </summary>
+
+```jsx
+import React, { Component } from 'react';
+import './Header.css';
+
+class Header extends Component {
+  render() {
+    return (
+      <div id="header-component">
+        <h1> Showcase </h1>
+      </div>
+    )
+  }
+}
+
+export default Header;
+```
+
+</details>
+
+<details>
+
+<summary> <code> Header.css </code> </summary>
+
+```css
+#header-component {
+  width: 100%;
+  text-align: center;
+}
+```
+
+</details>
+
+<details>
+
+<summary> <code> App.js </code> </summary>
+
+```jsx
+import React, { Component } from 'react';
+import './App.css';
+
+// Components
+import Header from './component/Header/Header';
+
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Header />
+      </div>
+    )
+  }
+}
+
+export default App;
+```
+
+</details>
+
+<img src="https://github.com/devlemire/toy-problem-appendix/blob/solution/readme/2.png" />
+
