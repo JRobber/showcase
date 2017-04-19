@@ -2,7 +2,7 @@
 
 # Project Summary
 
-In this project we will take a look at a react application created using `create-react-app`. The layout has already been created for us but none of the functionality works.This project will start off as a showcase of solutions to toy problems. At the end of this project you should have an understanding of the following topics:
+In this project we will take a look at a react application created using `create-react-app`. The layout has already been created for us but none of the functionality works. At the end of this project you should have an understanding of the following topics:
 
 * Components
 * State

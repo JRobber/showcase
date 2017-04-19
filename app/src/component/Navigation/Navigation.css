@@ -1,9 +1,15 @@
 #navigation-component {
   width: 200px;
   height: 100vh;
+  min-height: 700px;
   display: inline-block;
 }
 
 #navigation-header {
   text-align: center;
+}
+
+.navigation-topic {
+  cursor: pointer;
+  text-decoration: underline;
 }
